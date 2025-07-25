@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* E-Waste Collection System Design System - Environmental & Sustainable Theme */
 
 @layer base {
   :root {
+    /* Environmental color palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 155 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 155 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 155 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary green - representing nature and sustainability */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 142 76% 32%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary earth tones */
+    --secondary: 120 15% 96%;
+    --secondary-foreground: 155 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 120 15% 96%;
+    --muted-foreground: 155 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 165 65% 92%;
+    --accent-foreground: 155 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --border: 120 15% 90%;
+    --input: 120 15% 95%;
+    --ring: 142 76% 36%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients for environmental theme */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(165 65% 42%));
+    --gradient-subtle: linear-gradient(180deg, hsl(120 15% 98%), hsl(165 65% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(165 65% 42%) 50%, hsl(180 45% 48%) 100%);
+
+    /* Shadows with environmental tint */
+    --shadow-eco: 0 10px 30px -10px hsl(142 76% 36% / 0.2);
+    --shadow-card: 0 4px 12px -2px hsl(142 30% 20% / 0.1);
+    --shadow-glow: 0 0 40px hsl(142 76% 50% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
