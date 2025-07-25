@@ -27,7 +27,7 @@ const EWasteForm = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast({
       title: "E-Waste Report Submitted!",
@@ -45,7 +45,7 @@ const EWasteForm = () => {
     setSelectedCategory("");
   };
 
-  const handleInputChange = (field: string, value: string) => {
+  const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
